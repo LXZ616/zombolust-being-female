@@ -77,7 +77,6 @@ export class Pregnancy extends Player<PregnancyData> implements TimedEvents {
 			current: 0,
 			isInLabor: false
 		});
-		this.weightDebuff = 0;
 		this.moodle?.moodle(0);
 	}
 
@@ -131,8 +130,6 @@ export class Pregnancy extends Player<PregnancyData> implements TimedEvents {
 		
 		if (progress < 0.25) return;
 
-		this.weightDebuff = progress;
-
 		// Consume extra water
 		const stats = this.player!.getStats();
 		const water = (0.5 * progress) / 1440;
@@ -150,10 +147,6 @@ export class Pregnancy extends Player<PregnancyData> implements TimedEvents {
 		const { progress } = this.pregnancy;
 		if (progress < 0.05 || progress > 0.33) return;
 		this.player!.getBodyDamage().setFoodSicknessLevel(50 + ZombRand(0, 50));
-	}
-
-	private set weightDebuff(progress: number) {
-		this.player?.setMaxWeightBase(8 * (1 - progress / 2));
 	}
 
 	public birth() {
