@@ -69,68 +69,68 @@ const ZLBF_DISTRIBUTION_GROUPS: readonly DistributionGroup[] = [
 	{
 		tableNames: TABLE_GROUPS.bathroom,
 		items: [
-			{ itemType: "ZLBF.Contraceptive", chance: 60 },
-			{ itemType: "ZLBF.Lactaid", chance: 40 },
-			{ itemType: "ZLBF.Condom", chance: 80 },
-			{ itemType: "ZLBF.CondomBox", chance: 75 },
-			{ itemType: "ZLBF.VaginalDouche", chance: 30 }
+			{ itemType: "ZLBF.Contraceptive", chance: 21 },
+			{ itemType: "ZLBF.Lactaid", chance: 14 },
+			{ itemType: "ZLBF.Condom", chance: 28 },
+			{ itemType: "ZLBF.CondomBox", chance: 26 },
+			{ itemType: "ZLBF.VaginalDouche", chance: 10 }
 		]
 	},
 	{
 		tableNames: TABLE_GROUPS.bedroomSideTables,
 		items: [
-			{ itemType: "ZLBF.Contraceptive", chance: 40 },
-			{ itemType: "ZLBF.Lactaid", chance: 20 }
+			{ itemType: "ZLBF.Contraceptive", chance: 14 },
+			{ itemType: "ZLBF.Lactaid", chance: 7 }
 		]
 	},
 	{
 		tableNames: [...TABLE_GROUPS.bedroomDressers, ...TABLE_GROUPS.bedroomSideTables],
 		items: [
-			{ itemType: "ZLBF.Condom", chance: 80 },
-			{ itemType: "ZLBF.CondomBox", chance: 40 }
+			{ itemType: "ZLBF.Condom", chance: 28 },
+			{ itemType: "ZLBF.CondomBox", chance: 14 }
 		]
 	},
 	{
 		tableNames: [...TABLE_GROUPS.bedroomSideTables, "BedroomDresserChild"],
-		items: [{ itemType: "ZLBF.BreastPump", chance: 40 }]
+		items: [{ itemType: "ZLBF.BreastPump", chance: 14 }]
 	},
 	{
 		tableNames: TABLE_GROUPS.hospital,
 		items: [
-			{ itemType: "ZLBF.Contraceptive", chance: 60 },
-			{ itemType: "ZLBF.Lactaid", chance: 50 },
-			{ itemType: "ZLBF.Condom", chance: 50 }
+			{ itemType: "ZLBF.Contraceptive", chance: 21 },
+			{ itemType: "ZLBF.Lactaid", chance: 18 },
+			{ itemType: "ZLBF.Condom", chance: 18 }
 		]
 	},
 	{
 		tableNames: TABLE_GROUPS.hospitalRoom,
 		items: [
-			{ itemType: "ZLBF.CondomBox", chance: 40 },
-			{ itemType: "ZLBF.BreastPump", chance: 50 },
-			{ itemType: "ZLBF.VaginalDouche", chance: 40 }
+			{ itemType: "ZLBF.CondomBox", chance: 14 },
+			{ itemType: "ZLBF.BreastPump", chance: 18 },
+			{ itemType: "ZLBF.VaginalDouche", chance: 14 }
 		]
 	},
 	{
 		tableNames: TABLE_GROUPS.store,
 		items: [
-			{ itemType: "ZLBF.Contraceptive", chance: 50 },
-			{ itemType: "ZLBF.Lactaid", chance: 40 },
-			{ itemType: "ZLBF.Condom", chance: 60 },
-			{ itemType: "ZLBF.CondomBox", chance: 80 },
-			{ itemType: "ZLBF.BreastPump", chance: 40 },
-			{ itemType: "ZLBF.VaginalDouche", chance: 30 }
+			{ itemType: "ZLBF.Contraceptive", chance: 18 },
+			{ itemType: "ZLBF.Lactaid", chance: 14 },
+			{ itemType: "ZLBF.Condom", chance: 21 },
+			{ itemType: "ZLBF.CondomBox", chance: 28 },
+			{ itemType: "ZLBF.BreastPump", chance: 14 },
+			{ itemType: "ZLBF.VaginalDouche", chance: 10 }
 		]
 	},
 	{
 		tableNames: TABLE_GROUPS.trashBins,
-		items: [{ itemType: "ZLBF.CondomUsed", chance: 80 }]
+		items: [{ itemType: "ZLBF.CondomUsed", chance: 28 }]
 	},
 	{
 		tableNames: TABLE_GROUPS.drugLocations,
 		items: [
-			{ itemType: "ZLBF.Contraceptive", chance: 30 },
-			{ itemType: "ZLBF.Lactaid", chance: 20 },
-			{ itemType: "ZLBF.Condom", chance: 50 }
+			{ itemType: "ZLBF.Contraceptive", chance: 10 },
+			{ itemType: "ZLBF.Lactaid", chance: 7 },
+			{ itemType: "ZLBF.Condom", chance: 18 }
 		]
 	}
 ];
